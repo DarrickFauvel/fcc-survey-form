@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Survey Form</title>
+</head>
+
+<body class="body">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <main class="main">
+        <header>
+            <h1 class="header__title" id="title">freeCodeCamp Survey Form</h1>
+            <p class="header__subtitle" id="description"><em>Thank you for taking time to help us improve the
+                    platform</em></p>
+        </header>
+        <form class="form" action="#" id="survey-form" method="POST">
+            <div class="m-form__textStack">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="m-form__textStack">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="m-form__textStack">
+                <label for="number" id="number-label">Age <span class="form__hint">(optional)</span></label>
+                <input type="number" id="number" name="age" placeholder="Age" min="10" max="200">
+            </div>
+
+
+            <fieldset class="form__fieldset">
+                <legend>Which option best describes your current role?</legend>
+                <select class="form__control" name="current-role" id="dropdown">
+                    <option selected value="">Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="full-time-job">Full Time Job</option>
+                    <option value="full-time-learner">Full Time Learner</option>
+                    <option value="prefer-not-to-say">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+                <legend>Would you recommend freeCodeCamp to a friend?</legend>
+                <ul class="form__list">
+                    <li><input type="radio" name="recommend" value="definitely" id="definitely" checked> <label
+                            for="definitely">Definitely</label></li>
+                    <li><input type="radio" name="recommend" value="maybe" id="maybe"> <label for="maybe">Maybe</label>
+                    </li>
+                    <li><input type="radio" name="recommend" value="not-sure" id="not-sure"> <label for="not-sure">Not
+                            sure</label></li>
+                </ul>
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+                <legend>What is your favorite feature of freeCodeCamp?</legend>
+                <select class="form__control" name="favorite-feature" id="favorite-feature">
+                    <option disabled selected value>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="open-source">Open Source</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+                <legend>What would you like to see improved? <span class="form__hint">(Check all that apply)</span></legend>
+                <ul class="form__list">
+                    <li><input type="checkbox" name="improve" id="front-end-projects" value="front-end-projects"> <label
+                            for="">Front-end Projects</label></li>
+                    <li><input type="checkbox" name="improve" id="back-end-projects" value="back-end-projects"> <label
+                            for="back-end-projects">Back-end Projects</label></li>
+                    <li><input type="checkbox" name="improve" id="data-visualization" value="data-visualization"> <label
+                            for="data-visualization">Data Visualization</label></li>
+                    <li><input type="checkbox" name="improve" id="challenges" value="challenges"> <label
+                            for="challenges">Challenges</label></li>
+                    <li><input type="checkbox" name="improve" id="open-source-community" value="open-source-community">
+                        <label for="open-source-community">Open Source Community</label>
+                    </li>
+                    <li><input type="checkbox" name="improve" id="gitter-help-rooms" value="gitter-help-rooms"> <label
+                            for="gitter-help-rooms">Gitter help rooms</label></li>
+                    <li><input type="checkbox" name="improve" id="videos" value="videos"> <label
+                            for="videos">Videos</label></li>
+                    <li><input type="checkbox" name="improve" id="city-meetups" value="city-meetups"> <label
+                            for="city-meetups">City Meetups</label></li>
+                    <li><input type="checkbox" name="improve" id="wiki" value="wiki"> <label for="wiki">Wiki</label>
+                    </li>
+                    <li><input type="checkbox" name="improve" id="forum" value="forum"> <label for="forum">Forum</label>
+                    </li>
+                    <li><input type="checkbox" name="improve" id="additional-courses" value="additional-courses"> <label
+                            for="additional-courses">Additional Courses</label></li>
+                </ul>
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+                <legend>Any comments or suggestions?</legend>
+                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+            </fieldset>
+
+            <input class="form__submit" type="submit" value="Submit" id="submit">
+        </form>
+    </main>
+</body>
+
+</html>
